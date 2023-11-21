@@ -9,14 +9,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-
-- task: AzureCLI@2
-  inputs:
-    scriptType: 'ps'
-    scriptLocation: 'inlineScript'
-    inlineScript: |
-      az --version
-      az account show
       
 - task: TerraformInstaller@0
   displayName: "Install Terraform"
