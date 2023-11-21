@@ -24,8 +24,8 @@ steps:
   displayName: 'Upgrade Azure CLI'
 
 # Install Azure DevOps extension
-- bash: az extension add -n azure-devops
-  displayName: 'Install Azure DevOps extension'
+#- bash: az extension add -n azure-devops
+#  displayName: 'Install Azure DevOps extension'
 
 # Now you can make calls into Azure DevOps CLI
 # ...      
