@@ -9,7 +9,13 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-      
+
+# Install Azure DevOps extension
+- bash: az extension add -n azure-devops
+  displayName: 'Install Azure DevOps extension'
+
+# Now you can make calls into Azure DevOps CLI
+# ...      
 - task: TerraformInstaller@0
   displayName: "Install Terraform"
   inputs:
