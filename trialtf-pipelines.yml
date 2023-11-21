@@ -38,7 +38,6 @@ steps:
 
 - script: |
     terraform init
-    terraform plan -out=terraform1.tfplan
   displayName: 'Terraform Plan'
  
   
@@ -48,6 +47,6 @@ steps:
     terraformVersion: 'latest'
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.SourcesDirectory)/terraform.tfplan'
+    
     artifactName: 'terraformPlan'
     publishLocation: 'Container'
